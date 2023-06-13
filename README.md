@@ -1,10 +1,6 @@
 
 # Basic Note App
 
-This project contains necessary documentation & code to get you qickly started with your internship project 🚀
-
-You are going to build a note-taking application for Android using Kotlin and modern technologies listed [here](#tech-stack). Before you get started you must complete the installation step.
-
 You can find design files in [Figma](https://www.figma.com/file/6m1vGJThLxr1VRTOVQNr8m/BasicNote-App).
 
 ## Tech Stack
