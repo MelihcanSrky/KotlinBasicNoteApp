@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.NoteDetailFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="@dimen/margin_24dp"
+            android:layout_height="@dimen/margin_24dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="@dimen/margin_20dp"
+            android:layout_marginVertical="@dimen/margin_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/editNoteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Title2"
+            android:textColor="@color/text_primary"
+            android:text="@string/edit_note"
+            android:layout_marginVertical="@dimen/margin_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    <EditText
+        android:id="@+id/editNoteTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNoteText"
+        style="@style/Title1"
+        android:textSize="@dimen/textSize_22sp"
+        android:layout_marginTop="@dimen/margin_48dp"
+        android:layout_marginHorizontal="@dimen/margin_24dp"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:hint="@string/write_title"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColorHint="@color/text_secondary"
+        android:textColor="@color/text_primary"
+        />
+
+    <EditText
+        android:id="@+id/editNoteNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editNoteTitle"
+        android:layout_marginHorizontal="@dimen/margin_24dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        style="@style/Title2"
+        android:textColor="@color/text_secondary"
+        android:hint="@string/write_your_note"
+        android:background="@android:color/transparent"
+        android:backgroundTint="@android:color/transparent"
+        android:textColorHint="@color/text_secondary"
+        />
+
+    <Button
+        android:id="@+id/editNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_24dp"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/button_tint"
+        android:foreground="@android:color/transparent"
+        android:textAllCaps="false"
+        android:text="@string/save_note"
+        style="@style/Title4"
+        android:fontFamily="@font/inter_semi"
+        app:cornerRadius="@dimen/borderRadious_5dp"
+        android:layout_marginBottom="@dimen/margin_24dp"
+        android:textColor="@color/btn_text_tint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingVertical="@dimen/margin_12dp"
+        android:paddingHorizontal="@dimen/margin_36dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

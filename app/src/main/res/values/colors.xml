@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+
+    // Colors
+    <color name="action_primary_100">#8B8CFF</color>
+    <color name="action_primary_50">#DCDCFF</color>
+    <color name="text_primary">#23233C</color>
+    <color name="text_secondary">#838D92</color>
+    <color name="helper_red">#DD2C00</color>
+    <color name="helper_yellow">#FFd164</color>
+    <color name="border_color">#E2E6EA</color>
+</resources>

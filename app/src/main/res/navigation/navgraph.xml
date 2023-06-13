@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/registerPageFragment">
+
+    <fragment
+        android:id="@+id/registerPageFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.RegisterPageFragment"
+        android:label="fragment_register_page"
+        tools:layout="@layout/fragment_register_page" >
+        <action
+            android:id="@+id/action_registerPageFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+        <action
+            android:id="@+id/action_registerPageFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_registerPageFragment_to_notesPageFragment"
+            app:destination="@id/notesPageFragment"
+            app:popUpTo="@id/notesPageFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_registerPageFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.LoginPageFragment"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPageFragment_to_registerPageFragment"
+            app:destination="@id/registerPageFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_notesPageFragment"
+            app:destination="@id/notesPageFragment"
+            app:popUpTo="@id/notesPageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" >
+        <action
+            android:id="@+id/action_forgetPasswordFragment_to_registerPageFragment"
+            app:destination="@id/registerPageFragment"
+            app:popUpTo="@id/registerPageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesPageFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.NotesPageFragment"
+        android:label="fragment_notes_page"
+        tools:layout="@layout/fragment_notes_page" >
+        <action
+            android:id="@+id/action_notesPageFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment" />
+        <action
+            android:id="@+id/action_notesPageFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePageFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.ProfilePageFragment"
+        android:label="fragment_profile_page"
+        tools:layout="@layout/fragment_profile_page" >
+        <action
+            android:id="@+id/action_profilePageFragment_to_notesPageFragment"
+            app:destination="@id/notesPageFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profilePageFragment_to_registerPageFragment"
+            app:destination="@id/registerPageFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/registerPageFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_profilePageFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.NoteDetailFragment"
+        android:label="fragment_note_detail"
+        tools:layout="@layout/fragment_note_detail" >
+        <action
+            android:id="@+id/action_noteDetailFragment_to_notesPageFragment"
+            app:destination="@id/notesPageFragment"
+            app:popUpTo="@id/notesPageFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.sarikaya.kotlinbasicnoteapp.view.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_profilePageFragment"
+            app:destination="@id/profilePageFragment"
+            app:popUpTo="@id/profilePageFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

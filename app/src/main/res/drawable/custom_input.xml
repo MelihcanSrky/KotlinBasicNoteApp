@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:width="327dp"
+    android:height="53dp"
+    android:viewportWidth="327"
+    android:viewportHeight="53"
+
+    >
+    <item   android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <stroke android:color="@color/action_primary_100" android:width="1dp"/>
+        </shape>
+    </item>
+
+    <item   android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <stroke android:color="@color/border_color" android:width="1dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="borderRadious_5dp">5dp</dimen>
+<!--    TextStyles-->
+    <!--    Margins-->
+    <dimen name="margin_4dp">4dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_24dp">24dp</dimen>
+    <dimen name="margin_28dp">28dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_36dp">36dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+    <dimen name="margin_52dp">52dp</dimen>
+    <dimen name="margin_56dp">56dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+
+<!--    LayoutHeight-->
+    <dimen name="layoutHeight_1dp">1dp</dimen>
+    <dimen name="layoutHeight_18dp">18dp</dimen>
+    <dimen name="layoutHeight_32dp">32dp</dimen>
+    <dimen name="layoutHeight_40dp">40dp</dimen>
+
+<!--    TextSize-->
+    <dimen name="textSize_22sp">22sp</dimen>
+</resources>

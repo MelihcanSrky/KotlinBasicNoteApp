@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Title1" parent="@android:style/TextAppearance">
+        <item name="android:textSize">26sp</item>
+        <item name="android:lineHeight">31.5sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Title2" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:lineHeight">19.4sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Title3" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineHeight">18.2sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Title4" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+    <style name="Title5" parent="@android:style/TextAppearance">
+        <item name="android:textSize">13sp</item>s
+        <item name="android:lineHeight">20sp</item>
+        <item name="android:fontFamily">@font/inter</item>
+    </style>
+
+</resources>
